@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Videh Web Img/Videh Light logo.png" alt="" height="35px">
+            </div>
+            <div class="content">
+                <div class="sign">
+                    <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#fff">
+                            <path
+                                d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
+                        </svg>
+                        Sign In</button>
+                </div>
+                <div class="eBok">
+                    <button class="button">
+                        E-Book
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#fff">
+                            <path
+                                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- <nav class="Hamburger-menu">
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M480-240q-56 0-107 17.5T280-170v10h400v-10q-42-35-93-52.5T480-240Zm0-80q69 0 129 21t111 59v-560H240v560q51-38 111-59t129-21Zm0-160q-25 0-42.5-17.5T420-540q0-25 17.5-42.5T480-600q25 0 42.5 17.5T540-540q0 25-17.5 42.5T480-480ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm240-320q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-140Z" />
+                        </svg>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                        </svg>
+                        <span>Yoga Classes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z" />
+                        </svg>
+                        <span>Challenges</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M240-120q-66 0-113-47T80-280q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm480 0q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm-480-80q33 0 56.5-23.5T320-280q0-33-23.5-56.5T240-360q-33 0-56.5 23.5T160-280q0 33 23.5 56.5T240-200Zm480 0q33 0 56.5-23.5T800-280q0-33-23.5-56.5T720-360q-33 0-56.5 23.5T640-280q0 33 23.5 56.5T720-200ZM480-520q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-680q0-33-23.5-56.5T480-760q-33 0-56.5 23.5T400-680q0 33 23.5 56.5T480-600Zm0-80Zm240 400Zm-480 0Z" />
+                        </svg>
+                        <span>Workshops</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M800-520q-17 0-28.5-11.5T760-560q0-17 11.5-28.5T800-600q17 0 28.5 11.5T840-560q0 17-11.5 28.5T800-520Zm-40-120v-200h80v200h-80ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z" />
+                        </svg>
+                        <span>Retreats</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M360-80q-58 0-109-22t-89-60q-38-38-60-89T80-360q0-81 42-148t110-102q20-39 49.5-68.5T350-728q33-68 101-110t149-42q58 0 109 22t89 60q38 38 60 89t22 109q0 85-42 150T728-350q-20 39-49.5 68.5T610-232q-35 68-102 110T360-80Zm0-80q33 0 63.5-10t56.5-30q-58 0-109-22t-89-60q-38-38-60-89t-22-109q-20 26-30 56.5T160-360q0 42 16 78t43 63q27 27 63 43t78 16Zm120-120q33 0 64.5-10t57.5-30q-59 0-110-22.5T403-403q-38-38-60.5-89T320-602q-20 26-30 57.5T280-480q0 42 15.5 78t43.5 63q27 28 63 43.5t78 15.5Zm120-120q18 0 34.5-3t33.5-9q22-60 6.5-115.5T621-621q-38-38-93.5-53.5T412-668q-6 17-9 33.5t-3 34.5q0 42 15.5 78t43.5 63q27 28 63 43.5t78 15.5Zm160-78q20-26 30-57.5t10-64.5q0-42-15.5-78T741-741q-27-28-63-43.5T600-800q-35 0-65.5 10T478-760q59 0 110 22.5t89 60.5q38 38 60.5 89T760-478Z" />
+                        </svg>
+                        <span>Docs & Films</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                        </svg>
+                        <span>Articles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#323439">
+                            <path
+                                d="M160-40v-80h640v80H160Zm0-800v-80h640v80H160Zm320 400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm70-80q45-56 109-88t141-32q77 0 141 32t109 88h70v-480H160v480h70Zm118 0h264q-29-20-62.5-30T480-280q-36 0-69.5 10T348-240Zm132-280q-17 0-28.5-11.5T440-560q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560q0 17-11.5 28.5T480-520Zm0 40Z" />
+                        </svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav> -->
+        </div>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M480-240q-56 0-107 17.5T280-170v10h400v-10q-42-35-93-52.5T480-240Zm0-80q69 0 129 21t111 59v-560H240v560q51-38 111-59t129-21Zm0-160q-25 0-42.5-17.5T420-540q0-25 17.5-42.5T480-600q25 0 42.5 17.5T540-540q0 25-17.5 42.5T480-480ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm240-320q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-140Z" />
+                    </svg>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                    </svg>
+                    <span>Yoga Classes</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+                    </svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">Tapas(Online Classes)</a></li>
+                        <li><a href="#">Anubhuti(Offline Services)</a></li>
+                        <li><a href="#">Pramarsa(Consultation Services)</a></li>
+                    </div>
+                </ul>
+
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z" />
+                    </svg>
+                    <span>Challenges</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M240-120q-66 0-113-47T80-280q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm480 0q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm-480-80q33 0 56.5-23.5T320-280q0-33-23.5-56.5T240-360q-33 0-56.5 23.5T160-280q0 33 23.5 56.5T240-200Zm480 0q33 0 56.5-23.5T800-280q0-33-23.5-56.5T720-360q-33 0-56.5 23.5T640-280q0 33 23.5 56.5T720-200ZM480-520q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-680q0-33-23.5-56.5T480-760q-33 0-56.5 23.5T400-680q0 33 23.5 56.5T480-600Zm0-80Zm240 400Zm-480 0Z" />
+                    </svg>
+                    <span>Workshops</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M800-520q-17 0-28.5-11.5T760-560q0-17 11.5-28.5T800-600q17 0 28.5 11.5T840-560q0 17-11.5 28.5T800-520Zm-40-120v-200h80v200h-80ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z" />
+                    </svg>
+                    <span>Retreats</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M360-80q-58 0-109-22t-89-60q-38-38-60-89T80-360q0-81 42-148t110-102q20-39 49.5-68.5T350-728q33-68 101-110t149-42q58 0 109 22t89 60q38 38 60 89t22 109q0 85-42 150T728-350q-20 39-49.5 68.5T610-232q-35 68-102 110T360-80Zm0-80q33 0 63.5-10t56.5-30q-58 0-109-22t-89-60q-38-38-60-89t-22-109q-20 26-30 56.5T160-360q0 42 16 78t43 63q27 27 63 43t78 16Zm120-120q33 0 64.5-10t57.5-30q-59 0-110-22.5T403-403q-38-38-60.5-89T320-602q-20 26-30 57.5T280-480q0 42 15.5 78t43.5 63q27 28 63 43.5t78 15.5Zm120-120q18 0 34.5-3t33.5-9q22-60 6.5-115.5T621-621q-38-38-93.5-53.5T412-668q-6 17-9 33.5t-3 34.5q0 42 15.5 78t43.5 63q27 28 63 43.5t78 15.5Zm160-78q20-26 30-57.5t10-64.5q0-42-15.5-78T741-741q-27-28-63-43.5T600-800q-35 0-65.5 10T478-760q59 0 110 22.5t89 60.5q38 38 60.5 89T760-478Z" />
+                    </svg>
+                    <span>Docs & Films</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                    </svg>
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="M160-40v-80h640v80H160Zm0-800v-80h640v80H160Zm320 400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm70-80q45-56 109-88t141-32q77 0 141 32t109 88h70v-480H160v480h70Zm118 0h264q-29-20-62.5-30T480-280q-36 0-69.5 10T348-240Zm132-280q-17 0-28.5-11.5T440-560q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560q0 17-11.5 28.5T480-520Zm0 40Z" />
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-section">
+            <div class="hero">
+                <div class="he1">
+                    <h1>Awaken Your Inner Potential with <i>VIDEH</i> Hatha Yoga</h1>
+                    <p>Discover balance that goes beyond physical postures. Our Yoga Classes at Videh seamlessly blend
+                        mind, body and spirit for a holistic well-being experience.</p>
+                    <div class="eml">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe for more details</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-pic">
+                <div class="pic-rt">
+                    <img src="Videh Web Img/01.jpg" alt="">
+                    <img src="Videh Web Img/02.jpg" alt="">
+                    <img src="Videh Web Img/03.jpg" alt="">
+                    <img src="Videh Web Img/04.jpg" alt="">
+                    <img src="Videh Web Img/05.jpg" alt="">
+                    <img src="Videh Web Img/06.jpg" alt="">
+                    <img src="Videh Web Img/07.jpg" alt="">
+                    <img src="Videh Web Img/08.jpg" alt="">
+                    <img src="Videh Web Img/09.jpg" alt="">
+                    <img src="Videh Web Img/10.jpg" alt="">
+                    <img src="Videh Web Img/11.jpg" alt="">
+                    <img src="Videh Web Img/12.jpg" alt="">
+                    <img src="Videh Web Img/13.jpg" alt="">
+                    <img src="Videh Web Img/14.jpg" alt="">
+                </div>
+                <div class="pic-lt">
+                    <img src="Videh Web Img/14.jpg" alt="">
+                    <img src="Videh Web Img/13.jpg" alt="">
+                    <img src="Videh Web Img/12.jpg" alt="">
+                    <img src="Videh Web Img/11.jpg" alt="">
+                    <img src="Videh Web Img/10.jpg" alt="">
+                    <img src="Videh Web Img/09.jpg" alt="">
+                    <img src="Videh Web Img/08.jpg" alt="">
+                    <img src="Videh Web Img/07.jpg" alt="">
+                    <img src="Videh Web Img/06.jpg" alt="">
+                    <img src="Videh Web Img/05.jpg" alt="">
+                    <img src="Videh Web Img/04.jpg" alt="">
+                    <img src="Videh Web Img/03.jpg" alt="">
+                    <img src="Videh Web Img/02.jpg" alt="">
+                    <img src="Videh Web Img/01.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="about-section">
+            <div class="about">
+                <h1>About Us</h1>
+                <h2><span>Videh</span> signifies transcending beyond the body and mind.</h2>
+                <p>Our training programs are crafted and delivered by a group of Certified Isha Hatha Yoga Teachers,
+                    meticulously trained under the guidance of Sadhguru. Immerse yourself in the purest form of yoga
+                    and meditations directly derived from the source, Adi Yogi (The Shiva), with our carefully
+                    curated programs.</p>
+                <button class="button">
+                    Read More</button>
+            </div>
+            <div class="about-detail">
+                <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="img" height="250px">
+                <h2>Kranti Kumar Sudarshan</h2>
+                <h5>(M.Tech, NIT Patna)
+                    Over 3 Years At Isha Yoga Center
+                    Trained At Sadhguru Gurukullam</h5>
+            </div>
+        </div>
+
+        <div id="text-connect">
+            <div class="text">
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+                <h2>We provide professional & certified trainers.</h2>
+                <h2>You can consult with our trainers for free.</h2>
+                <h2>You can join the community for free.</h2>
+            </div>
+        </div>
+
+        <div id="yoga-class">
+            <div class="cls-head">
+                <h1>Tapas</h1>
+                <h2>Online Classes</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/01.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogasparsh</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/02.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Mandala Abhyash</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/03.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Mandala Anand</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/04.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Sadhak</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/05.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogachetana</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/06.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogabhiksha</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div id="yoga-class">
+            <section class="head">
+                <section class="head-left">
+                    <div class="cls-head">
+                        <h1>Anubhuti</h1>
+                        <h2>Offline Services</h2>
+                    </div>
+                </section>
+                <section class="head-righ">
+                    <h1>Recommended</h1>
+                </section>
+            </section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/07.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogayatra(Group)</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/08.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogayatra(Private)</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/09.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogachetana</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/10.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogabhiksha</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/11.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogalahar</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/12.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogadanam</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div id="yoga-class">
+            <div class="cls-head">
+                <h1>Pramarsa</h1>
+                <h2>Consultation Services</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/13.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Swasthya Sambad</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/14.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogagyanam Sambad</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/15.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogabhiksha Sambad</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/16.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogalahar Sambad</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/17.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Yogachetana Sambad</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cls-pic">
+                            <img src="Videh Web Img/18.jpg" alt="">
+                        </div>
+                        <div class="cls-cont">
+                            <div class="cont-top">
+                                <div class="top-left">
+                                    <div class="top-icon">
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#323439">
+                                                <path
+                                                    d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                            </svg>
+                                        <p>VIDEH Hatha Yoga</p>
+                                        </p>
+                                    </div>
+                                    <h1>Adhyamt Sambad</h1>
+                                </div>
+                                <div class="top-right">
+                                    <p>Level 1</p>
+                                </div>
+                            </div>
+                            <div class="cont-bot">
+                                <div class="bot-left">
+                                    <p>
+                                        <img src="Videh Web Img/Kranti Kumar Sudarshan.svg" alt="image">
+                                    </p>
+                                    <p>Kranti Sudarshan</p>
+                                </div>
+                                <div class="bot-right">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="#2cb3c6">
+                                            <path
+                                                d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                                        </svg>
+                                    <p>21 min</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <section class="cls-dis">
+                                <h1>Get Started</h1>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <section id="fom">
+            <form method="post" action="" name="videh_form" id="videh_form">
+                <div class="form-head">
+                    <h1>Contact Us</h1>
+                    <h4>We're just a message away, and we'll be sure to reply to you within 24 hours</h4>
+                </div>
+                <div class="input-sec">
+                    <div class="fom-nam">
+                        <input type="text" name="your-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="fom-mid">
+                        <div class="fom-mbox">
+                            <input type="email" name="your-email" placeholder="Email" required>
+                        </div>
+                        <div class="fom-nbox">
+                            <input type="text" name="your-number" placeholder="Number" required>
+                        </div>
+                    </div>
+                    <textarea class="textarea" type="text" rows="10" name="message" placeholder="Message" required></textarea>
+                    <div class="fom-smit">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <element class="ftr-cont">
+            <element class="left-ftr">
+                <element class="cal-ftr">
+                    <article class="ftr-logo">
+                        <img src="Videh Web Img/Videh Dark logo.png" alt="">
+                    </article>
+                    <article class="ftr-add">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#ffded3">
+                                <path
+                                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                            </svg>Mona Cinema Enclave, Gandhi Maidan Rd, Dujra Diara, Patna, Bihar 800001</p>
+                    </article>
+                    <article class="ftr-cont">
+                        <p class="mob">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#ffded3">
+                                <path
+                                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z" />
+                            </svg>
+                            +91-8851708317
+                        </p>
+                        <p class="mil"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#ffded3">
+                                <path
+                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z" />
+                            </svg>info@videh.org</p>
+                    </article>
+                    <article class="ftr-social">
+                        <a href="https://www.linkedin.com/in/kranti-sudarshan-82b0a398/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/krantikumar.sudarshan" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/videh.hathayoga/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://in.pinterest.com/videh_org/" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </article>
+                </element>
+                <element class="menu-ftr">
+                    <ul>
+                        <li>
+                            <h3>Quick Link</h3>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M480-240q-56 0-107 17.5T280-170v10h400v-10q-42-35-93-52.5T480-240Zm0-80q69 0 129 21t111 59v-560H240v560q51-38 111-59t129-21Zm0-160q-25 0-42.5-17.5T420-540q0-25 17.5-42.5T480-600q25 0 42.5 17.5T540-540q0 25-17.5 42.5T480-480ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm240-320q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-140Z" />
+                                </svg>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Yoga Classes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z" />
+                                </svg>
+                                <span>Challenges</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M240-120q-66 0-113-47T80-280q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm480 0q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm-480-80q33 0 56.5-23.5T320-280q0-33-23.5-56.5T240-360q-33 0-56.5 23.5T160-280q0 33 23.5 56.5T240-200Zm480 0q33 0 56.5-23.5T800-280q0-33-23.5-56.5T720-360q-33 0-56.5 23.5T640-280q0 33 23.5 56.5T720-200ZM480-520q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-680q0-33-23.5-56.5T480-760q-33 0-56.5 23.5T400-680q0 33 23.5 56.5T480-600Zm0-80Zm240 400Zm-480 0Z" />
+                                </svg>
+                                <span>Workshops</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M800-520q-17 0-28.5-11.5T760-560q0-17 11.5-28.5T800-600q17 0 28.5 11.5T840-560q0 17-11.5 28.5T800-520Zm-40-120v-200h80v200h-80ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z" />
+                                </svg>
+                                <span>Retreats</span>
+                            </a>
+                        </li>
+                    </ul>
+                </element>
+            </element>
+            <element class="right-ftr">
+                <div class="blogs">
+                    <ul>
+                        <li>
+                            <h3>Articles</h3>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Upa yoga</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Surya Shakti</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Angamardana</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Surya Kriya</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Yogasana</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Bhuta Shuddhi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                                </svg>
+                                <span>Jala Neti</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="docs-films">
+                    <ul>
+                        <li>
+                            <h3>Docs & Films</h3>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M616-242q-27 1-51.5 1.5t-43.5.5h-41q-71 0-133-2-53-2-104.5-5.5T168-257q-26-7-45-26t-26-45q-6-23-9.5-56T82-447q-2-36-2-73t2-73q2-30 5.5-63t9.5-56q7-26 26-45t45-26q23-6 74.5-9.5T347-798q62-2 133-2t133 2q53 2 104.5 5.5T792-783q26 7 45 26t26 45q6 23 9.5 56t5.5 63q2 36 2 73v17q-19-8-39-12.5t-41-4.5q-83 0-141.5 58.5T600-320q0 21 4 40.5t12 37.5ZM400-400l208-120-208-120v240Zm360 200v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z" />
+                                </svg>
+                                <span>Yoga In Hindi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M616-242q-27 1-51.5 1.5t-43.5.5h-41q-71 0-133-2-53-2-104.5-5.5T168-257q-26-7-45-26t-26-45q-6-23-9.5-56T82-447q-2-36-2-73t2-73q2-30 5.5-63t9.5-56q7-26 26-45t45-26q23-6 74.5-9.5T347-798q62-2 133-2t133 2q53 2 104.5 5.5T792-783q26 7 45 26t26 45q6 23 9.5 56t5.5 63q2 36 2 73v17q-19-8-39-12.5t-41-4.5q-83 0-141.5 58.5T600-320q0 21 4 40.5t12 37.5ZM400-400l208-120-208-120v240Zm360 200v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z" />
+                                </svg>
+                                <span>Yoga In English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M616-242q-27 1-51.5 1.5t-43.5.5h-41q-71 0-133-2-53-2-104.5-5.5T168-257q-26-7-45-26t-26-45q-6-23-9.5-56T82-447q-2-36-2-73t2-73q2-30 5.5-63t9.5-56q7-26 26-45t45-26q23-6 74.5-9.5T347-798q62-2 133-2t133 2q53 2 104.5 5.5T792-783q26 7 45 26t26 45q6 23 9.5 56t5.5 63q2 36 2 73v17q-19-8-39-12.5t-41-4.5q-83 0-141.5 58.5T600-320q0 21 4 40.5t12 37.5ZM400-400l208-120-208-120v240Zm360 200v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z" />
+                                </svg>
+                                <span>Yog Gayanm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </element>
+        </element>
+        <section class="ftr-botm">
+            <div class="left-botm">
+                <div class="cpy-rit">
+                    <a href="index.html">
+                        © 2025 Videh.org All rights reserved
+                    </a>
+                </div>
+                <div class="Des-dev">
+                    <a href="index.html">
+                        <span>Desigh & Development By:-</span> Abhishek Jha
+                    </a>
+                </div>
+            </div>
+            <div class="right-botm">
+                <div class="pri-pol">
+                    <a href="index.html">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div class="pri-pol">
+                    <a href="index.html">
+                        Refund Policy
+                    </a>
+                </div>
+                <div class="pri-pol">
+                    <a href="index.html">
+                        Terms of Services
+                    </a>
+                </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="app.js" defer></script>
+</body>
+
+</html>
